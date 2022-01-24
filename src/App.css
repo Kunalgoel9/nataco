@@ -12,3 +12,6 @@ body {
   width: 95%;
   margin: auto;
 }
+a:hover {
+  cursor: pointer;
+}
