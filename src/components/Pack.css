@@ -1,0 +1,80 @@
+.pack {
+  width: 100%;
+  height: auto;
+  left: 22px;
+  top: 888px;
+  background: #21272c;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 1.5em;
+}
+.pack:hover {
+  background: #374b5b;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+.pack-left h1 {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 136.2%;
+  color: #ffffff;
+}
+.pack-left h2 {
+  font-family: "Belgrano", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 193.7%;
+  color: #465d68;
+}
+.pack-left p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 136.2%;
+  color: #24db6d;
+}
+#highlight {
+  color: #db9d24;
+}
+.pack-right {
+  display: grid;
+  place-items: center;
+}
+.most-popular {
+  width: 100px;
+  height: 30px;
+  background: #067bd8;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+.most-popular p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  color: #ffffff;
+}
+.pack-right-price {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: right;
+  color: #ffffff;
+}
+.pack-right-oldprice {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: #4c6070;
+}
