@@ -14,7 +14,7 @@ const Home = () => {
         <div className="image-container">
           <img
             style={{ width: "100%", height: "auto", margin: "auto" }}
-            src="https://i.pinimg.com/originals/e6/22/de/e622deb81dd76b758d4f98a196ee22d5.jpg"
+            src="https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80"
             alt=""
           />
         </div>
