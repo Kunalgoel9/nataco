@@ -6,8 +6,9 @@
   background-color: black;
   color: #ffffff;
   height: 60px;
-  padding: 0 30px;
+  padding: 0 10px;
   border-bottom: 1px solid #585858;
+  font-size: 2em;
 }
 
 .header a {
@@ -34,17 +35,15 @@
 
 @media (max-width: 768px) {
   .header ul {
-    margin: 20px 0;
     flex-direction: column;
     text-align: center;
+  }
+  .header {
+    font-size: 1.5em;
   }
 
   .header a {
     margin-right: 0;
-  }
-
-  .logo {
-    margin: 20px 0;
   }
 }
 /*header component styles*/
