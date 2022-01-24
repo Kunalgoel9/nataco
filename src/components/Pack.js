@@ -1,25 +1,38 @@
 import React from "react";
 import "./Pack.css";
-const Pack = () => {
+import { AiFillStar } from "react-icons/ai";
+const Pack = ({ heading, savings, saved, mostpopular, price, oldprice }) => {
   return (
     <div class="pack">
       <div class="pack-left">
-        <div class="most-popular">
-          <p>MOST POPULAR</p>
+        {mostpopular && (
+          <div class="most-popular">
+            <p>
+              {" "}
+              <AiFillStar />
+              MOST POPULAR <AiFillStar />
+            </p>
+          </div>
+        )}
+        <h1>{heading}</h1>
+        <h2>{savings}</h2>
+        <div style={{ display: "flex" }}>
+          <p>{saved}</p>
+          <p id="highlight">Best Results</p>
         </div>
-        <h1>1 Months Pack (4 tubes)</h1>
-        <h2>Savings: ₹200</h2>
-        <p>38% Saved</p>
-        <p id="highlight">Best Results</p>
       </div>
       <div class="pack-right">
         <div>
-          <h2 class="pack-right-price">₹595</h2>
-          <h3 class="pack-right-oldprice">₹795</h3>
+          <h2 class="pack-right-price">{price}</h2>
+          <h3 class="pack-right-oldprice">{oldprice}</h3>
         </div>
       </div>
     </div>
   );
+};
+
+Pack.defaultProps = {
+  mostpopular: false,
 };
 
 export default Pack;

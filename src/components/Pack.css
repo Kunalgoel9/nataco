@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 1.5em;
+  margin: 1em auto;
 }
 .pack:hover {
   background: #374b5b;
@@ -40,6 +41,7 @@
   color: #24db6d;
 }
 #highlight {
+  margin-left: 1em;
   color: #db9d24;
 }
 .pack-right {
@@ -53,6 +55,7 @@
   border-radius: 8px;
   display: grid;
   place-items: center;
+  box-sizing: border-box;
 }
 .most-popular p {
   font-family: "Poppins", sans-serif;
@@ -60,6 +63,8 @@
   font-weight: 500;
   font-size: 9px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 .pack-right-price {
   font-family: "DM Serif Display", serif;
@@ -77,4 +82,27 @@
   text-align: right;
   text-decoration-line: line-through;
   color: #4c6070;
+}
+@media (max-width: 500px) {
+  .pack {
+    height: 200px;
+  }
+  .pack-left h1 {
+    font-size: 16px;
+  }
+  .pack-left h2 {
+    font-size: 12px;
+  }
+  .pack-left p {
+    font-size: 12px;
+  }
+  .pack-right-price {
+    font-size: 12px;
+  }
+  .pack-right-oldprice {
+    font-size: 12px;
+  }
+  .most-popular p {
+    font-size: 9px;
+  }
 }

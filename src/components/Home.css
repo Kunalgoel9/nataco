@@ -42,3 +42,59 @@
 
   color: #3c464f;
 }
+
+.rating {
+  width: 90px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  background: #079741;
+  border-radius: 10px;
+}
+.rating-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.rating-section .rating-number {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+  margin-left: 1em;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.rating-section .reviews {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 175.7%;
+  margin-left: 1em;
+  /* identical to box height, or 18px */
+
+  text-align: center;
+
+  color: #424648;
+}
+@media (max-width: 500px) {
+  .details-container h3 {
+    font-size: 32px;
+  }
+  .details-container p {
+    font-size: 12px;
+  }
+  .rating-section .rating-number {
+    font-size: 13px;
+  }
+  .rating-section .reviews {
+    font-size: 10px;
+  }
+}
